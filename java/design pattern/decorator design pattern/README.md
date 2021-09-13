@@ -1,4 +1,4 @@
-Decorator 패턴을 이용해서 파일 I/O를 더 쉽게 출력해보자
+## Decorator 패턴을 이용해서 파일 I/O를 더 쉽게 출력해보자
 
 ![디자인패턴1](https://user-images.githubusercontent.com/86590036/132300025-7cb999fe-7748-411d-a86c-257047f9ea33.jpg)
 
@@ -8,13 +8,7 @@ Decorator 패턴을 이용해서 파일 I/O를 더 쉽게 출력해보자
 
 ![디자인패턴4](https://user-images.githubusercontent.com/86590036/132300103-6ee22d79-e82d-44e7-881b-424ea50d7175.jpg)
 
-![디자인패턴5](https://user-images.githubusercontent.com/86590036/132308400-f5a66707-8ea8-44ea-ab03-f0b98ea1895f.jpg)
-
-![디자인패턴6](https://user-images.githubusercontent.com/86590036/132308439-4ed544df-ec87-4e11-8a9c-b93913952741.jpg)
-
-![디자인패턴7](https://user-images.githubusercontent.com/86590036/132308464-78fcf9b1-b5a2-4980-92ac-086d9e09743f.jpg)
-
-DataOutputStream
+### 📌 DataOutputStream을 사용해보자
 
 1. 게시글 출력
 
@@ -112,9 +106,11 @@ DataOutputStream
   }
 ```
 
-ObjectOutputStream
+### 📌 serialize
 
-## serialize
+![디자인패턴5](https://user-images.githubusercontent.com/86590036/132308400-f5a66707-8ea8-44ea-ab03-f0b98ea1895f.jpg)
+
+![디자인패턴6](https://user-images.githubusercontent.com/86590036/132308439-4ed544df-ec87-4e11-8a9c-b93913952741.jpg)
 
 implements Serializable : 직렬화 할 수 있어요 표시 / 인터페이스 안에 아무것도 없다.
 
@@ -131,6 +127,8 @@ public class Board implements Serializable {
   private int viewCount;
   private int like;
 ```
+
+### 📌 ObjectOutputStream을 사용해보자
 
 [출력]
 
@@ -217,3 +215,7 @@ try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("board.dat
     }
   }
 ```
+
+### 📌 어떤 스트림을 쓸 것인지는 판단에 맡긴다.
+
+![디자인패턴7](https://user-images.githubusercontent.com/86590036/132308464-78fcf9b1-b5a2-4980-92ac-086d9e09743f.jpg)
