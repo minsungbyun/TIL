@@ -1,10 +1,23 @@
+## decorator design pattern & file I/O
+___
+
+### 📌 상속의 한계와 데코레이터 패턴의 필요성
+
 ![데코레이터1](https://user-images.githubusercontent.com/86590036/133042714-46e6a109-3019-41d8-a358-09f2f277f447.jpg)
+
+
+### 📌 기능을 확장하는 방법 : 상속과 포함
 
 ![데코레이터2](https://user-images.githubusercontent.com/86590036/133042739-7f1273ef-e6fe-474b-a025-043a3d2979cd.jpg)
 
-![데코레이터3](https://user-images.githubusercontent.com/86590036/133042767-d0dbfec4-9097-418b-8fdd-0d64547718f4.jpg)
+
+### 📌 데코레이터 패턴의 적용 : 바이트 스트림 클래스 vs 캐릭터 스트림 클래스
 
 ![스트림 1](https://user-images.githubusercontent.com/86590036/133042790-d4e232af-b7ff-4062-b954-ae911308f49f.jpg)
+
+![데코레이터3](https://user-images.githubusercontent.com/86590036/133042767-d0dbfec4-9097-418b-8fdd-0d64547718f4.jpg)
+
+
 
 ![스트림 2](https://user-images.githubusercontent.com/86590036/133042811-03fcdd4d-3f98-41a2-81f2-7d6d23022670.jpg)
 
