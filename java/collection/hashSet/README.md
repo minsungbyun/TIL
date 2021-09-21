@@ -66,7 +66,7 @@ Object로부터 상속 받은 hashCode()와 equals()를 그대로 사용하였�
 
 ```
 
-### hashMap
+### 2. hashMap
 
 ![4](https://user-images.githubusercontent.com/86590036/130890627-509ca29f-33e8-4456-a0ff-b7e5f3ba2226.jpg)
 
@@ -144,7 +144,7 @@ Set<Entry<String,Member>> entrySet = map.entrySet();
   Iterator<String> 키를꺼내주는객체 = keys.iterator();
 ```
 
-### hashMap vs hashTable
+### 3. hashMap vs hashTable
 
 **key나 value에 null이 될 수 있는지의 여부**
 
