@@ -1,3 +1,7 @@
-## 📌 세션 다루기 - HttpSession 직접 사용하기
-## 📌 @SessionAttributes, @ModelAttribute
-## 📌 세션의 값을 무효화시키는 방법
+## 📌 JSON 콘텐트 출력하기
+
+### 🟣 인터셉터 배치하기
+
+🗸
+
+
