@@ -34,6 +34,22 @@
 - 클린코드
 - algorithms (빨간책 로버트 세지윅,권오인 ) -> 경력자
 - uml과 패턴의 적용 (applying uml and patterns)
+- 토비의 스프링
+- 모던 자바스크립트
+
+------------------------------------------------
+
+- 자바의 정석 / 스프링의 정석 / 토비의 스프링
+
+## Help
+
+- 코드초보스터디
+- OKKY
+- IT노조
+
+- [SW 개발자 현직 정보공유방] (https://forms.gle/bhn6oZAufKxXTQvEA)
+- [SW 개발자 취업&이직 공고방] (https://open.kakao.com/o/giLVjmWc)
+- [알고리즘 온라인&오프라인 스터디 오픈카톡방] (https://open.kakao.com/o/g0fl7MN)
 
 ## 알고리즘 : 출제자의 의도를 파악해라
 
