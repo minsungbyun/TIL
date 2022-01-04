@@ -1,6 +1,6 @@
-면접복기 
+면접복기
 
-코드트리 
+코드트리
 
 <질문리스트>
 코드트리
@@ -23,7 +23,7 @@ mvc에서 모델의 역할
 회사 소개 후 우리 회사는 어떤 회사라고 생각하나?
 우리회사에 대해 궁금한 점
 
-말하는 자세, 손의 위치, 시선처리, 말 빠르기 
+말하는 자세, 손의 위치, 시선처리, 말 빠르기
 내용 늘어지지 않게 두괄식으로 말하기
 명확한 나만의 기준 적용하기
 
@@ -45,11 +45,12 @@ mvc에서 모델의 역할
 모스티소프트
 
 코딩테스트 (문제 14문제 30분)
+
 1. 자바(세로 구구단, 스태틱 & 인스턴스 변수 활용문제,GET과 POST의 차이점)
 2. html(텍스트 가운데 배치 및 주소출력)
 3. css(javascipt로 css 제어하기, div와 span차이)
 4. javascript
-5. jQuery 
+5. jQuery
 6. ORACLE(GROUP BY, HAVING, LIKE, SELECT)
 7. 창의력문제(규칙찾기)
 8. 자기소개
@@ -67,7 +68,6 @@ mvc에서 모델의 역할
 20. 요즘 이직 자주하는 추세인데 장기근속에 대해 어떻게 생각하는가?
 21. 살면서 실패했던 경험을 이야기 해달라
 
-
 에이티웍스
 
 1. 자바란?
@@ -84,7 +84,27 @@ mvc에서 모델의 역할
 12. IOC컨테이너와 DI의 차이점
 13. @Bean에 설명하시오
 14. @Bean에 해당하는 어노테이션을 말하시오
-------------------------
+
+---
+
 15. 개발을 시작하게 된 계기
 16. 프로젝트에서 발생한 문제를 어떻게 해결하였는가?
 
+---
+
+1. o,x 문제(5문제)
+
+- 상속(abstract, interface), 자료구조(List,Set,Map), 접근제한자(protected)
+
+2. Exception 관련 자바 코드 문제
+3. implements vs extends
+4. wrapper class vs primitive type
+5. map의 key와 value를 뽑아라 (map.entry<String,Integer> result : sol.entrySet())
+6. DB쿼리문제 (JOIN, GROUP BY, HAVING, ORDER BY, LIKE)
+7. ER 다이어그램 카디널리티
+8. JS, jQuery selector 문제
+9. GET, POST
+10. 알고리즘 순서도
+11. 정렬 알고리즘
+12. 팩토리얼 구현
+13. 문자열 양 끝에 있는 것 비교하기
