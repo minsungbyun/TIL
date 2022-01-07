@@ -1,4 +1,4 @@
-## 📌 STS서버실행 오류
+## 📌 Uncaught ReferenceError : resources is not defined
 
 ---
 
