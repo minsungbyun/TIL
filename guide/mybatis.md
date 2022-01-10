@@ -32,6 +32,10 @@
 - @MapperScan 애노테이션 사용
 - 스프링 XML파일을 사용해서 MapperScannerConfigurer를 등록
 
+## 자주나는에러
+
+- 테스트케이스를 사용해서 DB값 조회할 때 값이 안나오는 경우는 DB의 커밋이 되었는지 확인한다.
+
 ## REFERENCE
 
 https://jforj.tistory.com/75 (마이바티스, 스프링 설명 괜찮다.)

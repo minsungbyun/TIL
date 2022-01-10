@@ -87,6 +87,7 @@ SELECT test_seq.NEXTVAL from dual;
  -  SELECT, DELETE, UPDATE문의 서브 쿼리
  -  CREATE TABLE, ALTER TABLE의 DEFAULT 
 
+## 시퀀스 조회
 
 SELECT * FROM USER_SEQUENCES;
 SELECT * FROM USER_SEQUENCES WHERE SEQUENCE_NAME = 'SEQ_NAME';
@@ -110,4 +111,14 @@ SELECT 시퀀스명.NEXTVAL FROM DUAL;
 4. 시퀀스의 INCREMENT 를 1로 설정 합니다.
 
 ALTER SEQUENCE 시퀀스명 INCREMENT BY 1;
+
+############################### IDENTITY ########################################
+
+## Oracle 12c 버전부터는IDENTITY 사용 가능
+
+generated always as IDENTITY
+
+## IDENTITY 초기화
+
+ALTER TABLE test MODIFY(id GENERATED AS IDENTITY (START WITH 1));​
 
