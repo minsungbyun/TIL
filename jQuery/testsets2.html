@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <span data-name="min" data-address="hey" data-member='{"name":"아무개","age":"22"}'></span>
+  </div>
+    <span id=test></span>
+  
+    <span id="test2">dddddddddd</span>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $(function() {
+       
+      $('span').data('hehe','hoi');
+      let a = $('span').data('hehe');
+      
+
+      let spanData = $('span').data('member').age;
+      $('span#test').text(spanData);
+      
+      const result = $('span#test2').text();
+      alert(result);
+      
+    });
+
+  </script>
+</body>
+</html>

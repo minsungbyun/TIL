@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div.popup-1 {
+      position: fixed;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color:  #0000007f;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 5s, visibility 1s;
+    }
+
+    div.popup-1.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <button>팝업</button>
+  <div class="popup-1"></div>
+  
+  
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $('button').click(function() {
+      let hasActive = $('.popup-1').hasClass('active');
+      if(!hasActive) {
+        $('.popup-1').addClass('active');
+
+      } else {
+        $('.popup-1').removeClass('active');
+
+      }
+    });
+
+  </script>
+</body>
+</html>
+
+
+<!--
+투명도 
+00 : 0
+FF : 255
+
+display : none, block과transaction이 섞이면 동작 안한다.
+
+opacity와 visibility는 거의 같이 쓰인다고 보면 된다.
+사라졌다가 서서히 보일 때 
+
+addClass //  명령  void
+removeClass // 명령 void
+hasClass // true false
+
+fade-in fade-out (투명도 조정)
+slide down slide up (높이 조정)
+-->
