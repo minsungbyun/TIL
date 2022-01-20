@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>display : none 활용하기</title>
+  <style>
+    button + div {
+      background-color: blue;
+      display: none;
+    }
+
+    div.change {
+      display: block;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <button>팝업열기</button>
+  <button>팝업닫기</button>
+  <div>글자1</div>
+
+
+
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script>
+    $('button:nth-of-type(1)').click(function() {
+      $('div').addClass('change');
+    });
+
+    $('button:nth-of-type(2)').click(function() {
+      $('div').removeClass('change');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html body .active {
+      border-width: 20px;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/"></script>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+
+  <button class="btn-1">버튼 1</button>
+
+  <section class="border-8 border-red-500 p-10">
+    주인공의 부모
+    <section class="border-8 border-yellow-500 p-10">
+      주인공의 형
+      <section class="border-8 border-indigo-500 p-10">
+        주인공의 형의 자식
+      </section>
+    </section>
+    <section class="box-1 border-8 border-blue-500 p-10">
+      주인공
+      <section class="border-8 border-indigo-500 p-10">
+        주인공의 자식
+        <section class="border-8 border-yellow-500 p-10">
+          주인공의 손자
+        </section>
+      </section>
+    </section>
+    <section class="border-8 border-green-500 p-10">
+      주인공의 인접동생
+    </section>
+    <section class="border-8 border-red-500 p-10">
+      주인공의 인접동생의 동생
+    </section>
+
+   
+ 
+  </section>
+
+  <script>
+    function onBtn1Clicked() {
+       $('.box-1').addClass('active');
+       // 인접동생
+       $('.box-1').next().addClass('active');
+       // 인접동생의 동생
+       $('.box-1').next().next().addClass('active');
+       // 형
+       $('.box-1').prev().addClass('active');
+       // 형의 자식
+       $('.box-1').prev().children().addClass('active');
+       // 주인공의 동생
+       $('.box-1').children().addClass('active');
+       // 주인공의 후손
+       $('.box-1').find('*').addClass('active');
+       // 주인공의 부모
+       $('.box-1').parent().addClass('active');
+       // 주인공의 부모의 부모 body
+       $('.box-1').parent().parent().css('background-color','#afafaf');
+       // 원래방법
+       //$('body').css('background-color','#afafaf');
+       // 주인공의 부모의 부모 의 부모
+       $('.box-1').closest('html').css('padding','20px');
+       // 원래방법
+       //$('html').css('background-color','#afafaf');
+       $('.box-1').parent().parent().parent().css('background-color','#afafaf');
+
+       // css()를 사용하는 것은 최악이다.
+       // addClass() removeClass()을 사용하자
+    }
+    $('.btn-1').click(onBtn1Clicked);
+  </script>
+</body>
+</html>
+
+
