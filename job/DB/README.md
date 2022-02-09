@@ -6,3 +6,12 @@ addr - 주소
 arch - 건축
 mthd - 방법
 cnt - 카운트
+bun - 번
+ji - 지
+lot - 로트
+gb - 구분
+mgm - 관리
+nm - 이름
+yn - 여부
+seqno - 일련번호
+chk - 체크
