@@ -36,3 +36,5 @@ NULL이 포함된 컬럼의 AVG(컬럼)에서 NULL은 연산에서 제외된다.
 COUNT(\*) - NULL 포함 개수
 COUNT(컬럼) - NULL 제외 개수
 분모가 0이 들어가는 경우 연산 자체가 에러를 발생시킨다.
+
+https://kimsyoung.tistory.com/entry/GROUP-BY-vs-PARTITION-BY-%EC%9C%A0%EC%82%AC%EC%A0%90%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90
