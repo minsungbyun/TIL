@@ -38,3 +38,17 @@ COUNT(컬럼) - NULL 제외 개수
 분모가 0이 들어가는 경우 연산 자체가 에러를 발생시킨다.
 
 https://kimsyoung.tistory.com/entry/GROUP-BY-vs-PARTITION-BY-%EC%9C%A0%EC%82%AC%EC%A0%90%EA%B3%BC-%EC%B0%A8%EC%9D%B4%EC%A0%90
+
+실수한 부분
+WHERE 조건절 + NOT 위치 햇갈렸음
+
+SELECT _ FROM TABLE WHERE user_id NOT IN ('user1','user2'); (x)
+SELECT _ FROM TABLE WHERE NOT user_id IN ('user1','user2'); (o)
+=> WHERE AND
+
+IN, EXIST의 쿼리 접근법은 다르다.
+
+IN - WHERE절 뒤의 서브쿼리부터 접근한다.
+EXIST - 하나의 행에 접근해서 WHERE절 뒤의 서브쿼리에 결과가 존재하는지 확인
+
+NOT IN => != AND
