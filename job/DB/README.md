@@ -80,3 +80,12 @@ CHAR 타입은 고정된 데이터 길이를 가지고 컬럼에만 지정하는
 하지만 CHAR와 VARCHAR2형과 비교하는 경우에는 예외다.
 
 TRUNC("값","옵션") - 소수점, 날짜의 시간을 없앨 때 사용한다.
+
+<----SQL---->
+
+1. JOIN
+2. 필수적으로 알아야할 고급문법 혹은 개념
+
+3. w3schools.com (https://www.w3schools.com/sql/sql_intro.asp)
+4. SQLBolt (https://sqlbolt.com/)
+5. SQLZOO (https://sqlzoo.net/wiki/SQL_Tutorial)
