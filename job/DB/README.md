@@ -89,3 +89,17 @@ TRUNC("값","옵션") - 소수점, 날짜의 시간을 없앨 때 사용한다.
 3. w3schools.com (https://www.w3schools.com/sql/sql_intro.asp)
 4. SQLBolt (https://sqlbolt.com/)
 5. SQLZOO (https://sqlzoo.net/wiki/SQL_Tutorial)
+
+DML 문장은 서브 쿼리를 사용하여 다른 테이블의 데이터들도 이용할 수 있다.
+하지만 원래 존재하던 테이블에 대해서 DML 작업을 하는 것은 많은 제약 조건들 때문에 에러를 발생시키는 경우가 많다
+
+LONG 타입 컬럼은 서브쿼리를 사용하여 테이블을 생성할 때 복사되지 않는다.
+LONG 타입 컬럼은 GROUPY BY나 ORDER BY절에 포함될 수 없다.
+LONG 타입 컬럼에는 제약조건이 정의하지 못한다.
+LONG 타입 컬럼에는 제약조건이 정의하지 못한다.
+
+CHAR 타입은 고정된 데이터 길이를 가지고 컬럼에만 지정하는 것을 추천한다.
+길이가 짧은 쪽을 긴 쪽과 길이를 맞추어 비교
+하지만 CHAR와 VARCHAR2형과 비교하는 경우에는 예외다.
+
+TRUNC("값","옵션") - 소수점, 날짜의 시간을 없앨 때 사용한다.
